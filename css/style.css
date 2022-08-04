@@ -11,6 +11,7 @@
   --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-gap: 30px;
+  --leaving-text: rgba(33, 150, 243, 0.9);
 }
 
 header {
@@ -590,6 +591,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+.card-img {
+  position: relative;
+}
+
+.leaving-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  letter-spacing: 0.03em;
+  color: var(--color4);
+  background-color: var(--leaving-text);
+}
 /*------------MAIN (PORTFOLIO)------------*/
 
 /*-------FOOTER (INDEX & PORTFOLIO)-----*/
