@@ -12,6 +12,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-gap: 30px;
   --leaving-text: rgba(33, 150, 243, 0.9);
+  --transform-time: 250ms;
 }
 
 header {
@@ -614,7 +615,8 @@ body {
   color: var(--color4);
   background-color: var(--leaving-text);
   transform: translateY(100.15%);
-  transition: transform 250ms linear;
+  transition: transform var(--transform-time) linear;
+  overflow: auto;
 }
 /*------------MAIN (PORTFOLIO)------------*/
 
