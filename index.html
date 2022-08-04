@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
   </head> 
@@ -65,7 +66,7 @@
         <div class="container">
           <h2 class="section-title visually-hiden">скрытый заголовок</h2>
           <ul class="features list">
-            <li class="features-link main-link-one">
+            <li class="features-link main-link-one" data-aos="flip-left">
               <div class="features-icon">
                 <svg class="features-svg-icon">
                   <use href="./picture/symbol-defs.svg#icon-antenna"></use>
@@ -76,7 +77,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features-link main-link-two">
+            <li class="features-link main-link-two" data-aos="flip-left">
               <div class="features-icon">
                 <svg class="features-svg-icon">
                   <use href="./picture/symbol-defs.svg#icon-clock"></use>
@@ -87,7 +88,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features-link main-link-three">
+            <li class="features-link main-link-three" data-aos="flip-left">
               <div class="features-icon">
                 <svg class="features-svg-icon">
                   <use href="./picture/symbol-defs.svg#icon-diagram"></use>
@@ -98,7 +99,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features-link main link-four">
+            <li class="features-link main link-four" data-aos="flip-left">
               <div class="features-icon">
                 <svg class="features-svg-icon">
                   <use href="./picture/symbol-defs.svg#icon-astronaut"></use>
@@ -117,20 +118,20 @@
         <div class="container">
           <h2 class="two-capital">Чем мы занимаемся</h2>
           <ul class="wwd list">
-            <li class="wwd-item">
+            <li class="wwd-item" data-aos="fade-right">
               <a href=""><img src="./picture/box1.jpg" alt="box1" width="370" /></a>
             </li>
             <li class="wwd-item">
               <a href=""><img src="./picture/box2.jpg" alt="box2" width="370" /></a>
             </li>
-            <li class="wwd-item">
+            <li class="wwd-item" data-aos="fade-left">
               <a href=""><img src="./picture/box3.jpg" alt="box3" width="370" /></a>
             </li>
           </ul>
         </div>
       </section>
       <!--Our team-->
-      <section class="section maun-sctn-four">
+      <section class="section maun-sctn-four" data-aos="zoom-out-left">
         <div class="container">
           <h2 class="two-capital">Наша команда</h2>
           <ul class="team-set list">
@@ -381,7 +382,7 @@
           </ul>
         </div>
       </section>
-      <section class="section clients">
+      <section class="section clients" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="container">
           <h2 class="two-capital">Постоянные клиенты</h2>
           <ul class="list clients-list">
@@ -503,5 +504,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
