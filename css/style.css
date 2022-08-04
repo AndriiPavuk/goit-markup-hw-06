@@ -591,8 +591,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.leaving-item:hover .leaving-text {
+  transform: translateY(0);
+}
+
 .card-img {
   position: relative;
+  overflow: hidden;
 }
 
 .leaving-text {
@@ -608,6 +613,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--color4);
   background-color: var(--leaving-text);
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 }
 /*------------MAIN (PORTFOLIO)------------*/
 
