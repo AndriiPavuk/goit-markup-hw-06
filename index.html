@@ -18,10 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-  </head> 
+  </head>
   <body>
     <header>
       <div class="container header-nav">
@@ -118,20 +118,20 @@
         <div class="container">
           <h2 class="two-capital">Чем мы занимаемся</h2>
           <ul class="wwd list">
-            <li class="wwd-item" data-aos="fade-right">
+            <li class="wwd-item" data-aos="flip-down">
               <a href=""><img src="./picture/box1.jpg" alt="box1" width="370" /></a>
             </li>
-            <li class="wwd-item">
+            <li class="wwd-item" data-aos="flip-down">
               <a href=""><img src="./picture/box2.jpg" alt="box2" width="370" /></a>
             </li>
-            <li class="wwd-item" data-aos="fade-left">
+            <li class="wwd-item" data-aos="flip-down">
               <a href=""><img src="./picture/box3.jpg" alt="box3" width="370" /></a>
             </li>
           </ul>
         </div>
       </section>
       <!--Our team-->
-      <section class="section maun-sctn-four" data-aos="zoom-out-left">
+      <section class="section maun-sctn-four" data-aos="zoom-in">
         <div class="container">
           <h2 class="two-capital">Наша команда</h2>
           <ul class="team-set list">
@@ -504,6 +504,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="madal-window">
+        <button type="button" class="modal-button">
+          <svg class="modal-icon">
+                    <use href="./picture/modal-icon.svg#icon-close-black"></use>
+                  </svg>
+        </button>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
