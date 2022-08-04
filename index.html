@@ -58,7 +58,7 @@
       <section class="main-sctn-one">
         <div class="container">
           <h1 class="one-capital">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="main-button">Заказать услугу</button>
+          <button type="button" class="main-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--Features-->
@@ -504,12 +504,12 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="madal-window">
-        <button type="button" class="modal-button">
+        <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-icon">
-                    <use href="./picture/modal-icon.svg#icon-close-black"></use>
-                  </svg>
+            <use href="./picture/modal-icon.svg#icon-close-black"></use>
+          </svg>
         </button>
       </div>
     </div>
@@ -517,5 +517,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
