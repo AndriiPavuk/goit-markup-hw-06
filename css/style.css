@@ -613,7 +613,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--color4);
   background-color: var(--leaving-text);
-  transform: translateY(100%);
+  transform: translateY(100.1%);
   transition: transform 250ms linear;
 }
 /*------------MAIN (PORTFOLIO)------------*/
