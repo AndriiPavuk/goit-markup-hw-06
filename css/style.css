@@ -162,6 +162,7 @@ body {
   color: var(--color2);
   padding: 32px 0;
   display: block;
+  transition: color var(--transform-time);
 }
 
 .header-link:hover {
@@ -200,6 +201,7 @@ body {
   padding: 32px 0;
   display: flex;
   align-items: center;
+  transition: color var(--transform-time);
 }
 
 .header-contact:hover {
@@ -276,6 +278,7 @@ body {
   min-width: 200px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--transform-time);
 }
 
 .main-button:focus {
@@ -418,6 +421,7 @@ body {
 
 .main-icon .ni-item {
   color: var(--color8);
+  transition: color var(--transform-time), background-color var(--transform-time);
 }
 
 .ni-icon {
@@ -466,6 +470,8 @@ body {
   border: 1px solid var(--color8);
   border-radius: 4px;
   color: var(--color8);
+  transition: color var(--transform-time);
+
 }
 
 .client-icon {
@@ -507,6 +513,7 @@ body {
   background-color: var(--color7);
   border-radius: 4px;
   border: none;
+  transition: color var(--transform-time), background-color var(--transform-time)
 }
 
 .main-button-port .secondary:hover {
@@ -666,6 +673,12 @@ footer .bottom {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color4);
+  transition: color var(--transform-time)
+}
+
+.footer-link-city:hover,
+.footer-link-city:focus {
+  color: var(--color1);
 }
 
 .footer-link-connection {
@@ -674,6 +687,12 @@ footer .bottom {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transform-time)
+}
+
+.footer-link-connection:hover,
+.footer-link-connection:focus {
+  color: var(--color1);
 }
 
 /* ------------COLUM-TWO---------- */
@@ -702,6 +721,7 @@ footer .bottom {
 .footer-ni .ni-item {
   color: var(--color4);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: color var(--transform-time), background-color var(--transform-time)
 }
 
 .footer-ni .ni-item:hover,
@@ -722,11 +742,11 @@ footer .bottom {
   transition: opacity var(--transform-time), visibility var(--transform-time);
 }
 
-.backdrop.is-hidden .madal-window {
+.backdrop.is-hidden .modal-window {
   transform: translate(0, 0) scale(0);
 }
 
-.madal-window {
+.modal-window {
   position: absolute;
   width: 528px;
   min-height: 581px;
