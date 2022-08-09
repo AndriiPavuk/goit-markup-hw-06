@@ -866,3 +866,7 @@ footer .bottom {
     margin-bottom: 20px;
 }
 
+.agreement-link {
+  color: var(--color1);
+   text-decoration: underline;
+}
