@@ -865,6 +865,15 @@ footer .bottom {
   margin-bottom: 20px;
 }
 
+.agreement {
+  align-items: center;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 30px;
+}
+
 .agreement-link {
   color: var(--color1);
   text-decoration: underline;
