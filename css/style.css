@@ -819,6 +819,14 @@ footer .bottom {
 }
 
 /* ---------MODAL-FORM------- */
+.modal-form {
+    width: 448px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
 
 .modal-label {
   position: relative;
@@ -877,4 +885,53 @@ footer .bottom {
 .agreement-link {
   color: var(--color1);
   text-decoration: underline;
+}
+
+.checkbox {
+  position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+    fill: white;
+    border: 2px solid var(--color2);
+    border-radius: 2px;
+    transition: color var(--transform-time), background-color var(--transform-time);
+}
+
+.visuall-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox:checked + .agreement-checkmark {
+    background-image: url(../picture/icon-check.svg);
+    background-position: center;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--color1);
+    background-color: var(--color1);
+}
+.agreement-checkmark {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+    fill: white;
+    border: 2px solid var(--color2);
+    border-radius: 2px;
+    transition: color var(--transform-time), background-color var(--transform-time);
 }
