@@ -935,3 +935,14 @@ footer .bottom {
     border-radius: 2px;
     transition: color var(--transform-time), background-color var(--transform-time);
 }
+
+.form-button {
+    width: 200px;
+    padding: 10px 55px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--color4);
+    transition: color var(--transform-time), background-color var(--transform-time), box-shadow var(--transform-time);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
