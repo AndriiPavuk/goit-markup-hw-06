@@ -915,12 +915,13 @@ footer .bottom {
 }
 
 .checkbox:checked + .agreement-checkmark {
-    background-image: url(../picture/icon-check.svg);
+    
     background-position: center;
     background-size: contain;
     background-origin: border-box;
     border-color: var(--color1);
     background-color: var(--color1);
+    background-image: url(../picture/icon-check.svg);
 }
 .agreement-checkmark {
     position: absolute;
