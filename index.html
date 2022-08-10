@@ -521,7 +521,7 @@
           </svg>
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="modal-form">
+        <form class="modal-form" autocomplete="off">
           <label class="modal-label">
             <span class="label">Имя</span>
             <input type="text" class="modal-input" name="name" required autofocus placeholder="" />
@@ -531,39 +531,37 @@
           </label>
           <label class="modal-label">
             <span class="label">Телефон</span>
-            <input type="tel" class="modal-input" name="tel" required autofocus placeholder="" />
-             <svg class="form-icon">
+            <input type="tel" class="modal-input" name="tel" required placeholder="" />
+            <svg class="form-icon">
               <use href="./picture/form-icon.svg#icon-phone-black"></use>
             </svg>
           </label>
           <label class="modal-label">
             <span class="label">Почта</span>
-            <input
-              type="email"
-              class="modal-input"
-              name="email"
-              required
-              autofocus
-              placeholder=""
-            />
-             <svg class="form-icon">
+            <input type="email" class="modal-input" name="email" required placeholder="" />
+            <svg class="form-icon">
               <use href="./picture/form-icon.svg#icon-email-black"></use>
             </svg>
           </label>
           <label class="modal-comment">
             <span class="label">Комментарий</span>
-            <textarea class="comment-textarea" name="comment" id="" placeholder="Введите текст"></textarea>
+            <textarea
+              class="comment-textarea"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
           <label class="agreement">
             Соглашаюсь с рассылкой и принимаю
-            <a href="https://www.google.com/logos/2010/pacman10-i.html" class="agreement-link">Условия договора</a>
-            <input class="checkbox visuall-hidden" type="checkbox" name="contract-policy">
+            <a href="https://www.google.com/logos/2010/pacman10-i.html" class="agreement-link"
+              >Условия договора</a
+            >
+            <input class="checkbox visuall-hidden" type="checkbox" name="contract-policy" />
             <span class="agreement-checkmark"></span>
           </label>
           <div>
             <button type="submit" class="main-button form-button">Отправить</button>
           </div>
-          
         </form>
       </div>
     </div>

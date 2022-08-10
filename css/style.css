@@ -820,12 +820,12 @@ footer .bottom {
 
 /* ---------MODAL-FORM------- */
 .modal-form {
-    width: 448px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    text-align: center;
+  width: 448px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .modal-label {
@@ -841,6 +841,7 @@ footer .bottom {
   border-radius: 4px;
   padding: 11px 2px 11px 42px;
   align-items: center;
+  transition: border var(--transform-time);
 }
 
 .label {
@@ -860,6 +861,7 @@ footer .bottom {
   left: 12px;
   width: 18px;
   height: 18px;
+  transition: fill var(--transform-time);
 }
 
 .comment-textarea {
@@ -871,6 +873,17 @@ footer .bottom {
   border-radius: 4px;
   color: inherit;
   margin-bottom: 20px;
+  transition: border var(--transform-time);
+}
+
+.comment-textarea::placeholder {
+  line-height: 1.14;
+  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.01;
+}
+.comment-textarea:focus,
+.modal-input:focus {
+  outline: none;
 }
 
 .agreement {
@@ -889,61 +902,71 @@ footer .bottom {
 
 .checkbox {
   position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 15px;
-    fill: white;
-    border: 2px solid var(--color2);
-    border-radius: 2px;
-    transition: color var(--transform-time), background-color var(--transform-time);
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  color: var(--color4);
+  border: 2px solid var(--color2);
+  border-radius: 2px;
+  transition: color var(--transform-time), background-color var(--transform-time);
 }
 
 .visuall-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .checkbox:checked + .agreement-checkmark {
-    
-    background-position: center;
-    background-size: contain;
-    background-origin: border-box;
-    border-color: var(--color1);
-    background-color: var(--color1);
-    background-image: url(../picture/icon-check.svg);
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color1);
+  background-color: var(--color1);
+  background-image: url(../picture/icon-check.svg);
 }
 .agreement-checkmark {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 15px;
-    fill: white;
-    border: 2px solid var(--color2);
-    border-radius: 2px;
-    transition: color var(--transform-time), background-color var(--transform-time);
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  fill: var(--color4);
+  border: 2px solid var(--color2);
+  border-radius: 2px;
+  transition: color var(--transform-time), background-color var(--transform-time);
+}
+
+.modal-label:focus-within > .form-icon {
+  fill: var(--color1);
+}
+.modal-input:focus-within {
+  border: 1px solid var(--color1);
+}
+.comment-textarea:focus-within {
+  border: 1px solid var(--color1);
 }
 
 .form-button {
-    width: 200px;
-    padding: 10px 55px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--color4);
-    transition: color var(--transform-time), background-color var(--transform-time), box-shadow var(--transform-time);
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  width: 200px;
+  padding: 10px 55px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--color4);
+  transition: color var(--transform-time), background-color var(--transform-time),
+    box-shadow var(--transform-time);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
