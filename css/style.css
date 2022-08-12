@@ -1006,14 +1006,6 @@ footer .bottom {
   overflow: hidden;
 }
 
-.checkbox:checked + .agreement-checkmark {
-  background-position: center;
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--color1);
-  background-color: var(--color1);
-  background-image: url(../picture/icon-check.svg);
-}
 .agreement-checkmark {
   position: absolute;
   display: inline-block;
@@ -1022,11 +1014,21 @@ footer .bottom {
   transform: translateY(-50%);
   width: 16px;
   height: 15px;
-  fill: var(--color4);
+  fill: white;
   border: 2px solid var(--color2);
   border-radius: 2px;
   transition: color var(--transform-time), background-color var(--transform-time);
 }
+
+.checkbox:checked + .agreement-checkmark {
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color1);
+  background-color: var(--color1);
+  background-image: url(../picture/icon-check.svg);
+}
+
 
 .modal-label:focus-within > .form-icon {
   fill: var(--color1);
